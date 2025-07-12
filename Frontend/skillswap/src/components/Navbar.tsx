@@ -15,7 +15,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full border-b bg-white fixed top-0 z-50">
+    <nav className="w-full border-b bg-white/80 backdrop-blur-sm fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Left: Logo or App Name */}
         <Link href="/" className="text-xl font-semibold text-black">
@@ -31,7 +31,7 @@ export default function Navbar() {
               className={clsx(
                 "relative pb-2 px-2 text-sm font-medium transition-all duration-200 rounded-md",
                 pathname === link.href
-                  ? "text-black bg-gray-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black"
+                  ? "text-black bg-gray-100/80 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black"
                   : "text-gray-500 hover:text-black hover:after:content-[''] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-black"
               )}
             >
