@@ -1,3 +1,4 @@
+import ExploreProfiles from "@/components/ExploreProfiles";
 import HeroSection from "@/components/Herosection";
 import HowItWorks from "@/components/HowItWorks";
 import { UserButton } from "@clerk/nextjs";
@@ -9,6 +10,7 @@ export default function Home() {
       <UserButton />
       <HeroSection />
       <HowItWorks />
+      <ExploreProfiles />
     </div>
   );
 }
